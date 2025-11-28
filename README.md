@@ -49,7 +49,7 @@ Access categorized support:
 
 ## Technology Stack
 - **Frontend**: Vite + React + TypeScript
-- **Backend**: Node.js + Express + TypeScript
+- **Backend**: Node.js + Express + JavaScript
 - **Database**: MongoDB (Chosen for flexibility with unstructured data like incident reports and geospatial features)
 
 ## Setup Instructions
