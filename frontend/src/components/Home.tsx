@@ -44,8 +44,17 @@ function Home() {
         </div>
       </main>
       <footer className="footer">
-        <p>Talk Safe is a confidential platform. All reports are handled with care and respect. In case of immediate danger, please contact emergency services directly.</p>
-        <p>&copy; 2025 Talk Safe. Built for Group 30 PLP Hackathon.</p>
+        <div className="footer-content">
+          <p>Talk Safe is a confidential platform. All reports are handled with care and respect. In case of immediate danger, please contact emergency services directly.</p>
+          <p>&copy; 2025 Talk Safe. Built for Group 30 PLP Hackathon.</p>
+        </div>
+        <button
+          onClick={handlePanic}
+          className="footer-panic-btn"
+          aria-label="Quick exit - opens calculator"
+        >
+          🚨 SOS
+        </button>
       </footer>
       <button className="panic-btn" onClick={handlePanic} aria-label="Quick Exit">⚠️</button>
     </div>
