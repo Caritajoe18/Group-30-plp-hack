@@ -1,6 +1,6 @@
 # Talk Safe
 
-**Talk Safe** is a mobile app designed to provide a safe and confidential platform for survivors of gender-based violence to report incidents and receive emergency assistance.
+**Talk Safe** is a mobile app designed to provide a safe and confidential platform for survivors, vistims and witnesses of gender-based violence to report incidents and receive emergency assistance.
 
 ## Problem Statement
 Gender-based violence is widespread, yet many cases go unreported due to:
@@ -13,13 +13,13 @@ Gender-based violence is widespread, yet many cases go unreported due to:
 This leaves countless victims without timely help.
 
 ## Purpose & Background
-GBV has severe emotional, physical and psychological consequences. Safe-space bridges the gap between survivors and support systems by offering a confidential, user-friendly and safe reporting environment.
+GBV has severe emotional, physical and psychological consequences. Talk-safe bridges the gap between survivors and support systems by offering a confidential, user-friendly and safe reporting environment.
 Our research shows that:
 1. Victims often feel isolated, unsafe, and unsure where to seek help  
 2. Many existing reporting mechanisms are not survivor-friendly  
 3. Survivors need *anonymous, fast, and accessible* tools  
 4. A mobile-first solution fits the needs of most users  
-Safe-space aims to address these gaps.
+talk-safe aims to address these gaps.
 
 ## Solution Features
 1. Incident Reporting
@@ -52,6 +52,9 @@ Access categorized support:
 - **Backend**: Node.js + Express + JavaScript
 - **Database**: MongoDB (Chosen for flexibility with unstructured data like incident reports and geospatial features)
 
+## SOS Feature Implementation
+See [Feature requirements.md](Feature%20requirements.md) for detailed frontend requirements.
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -61,8 +64,8 @@ Access categorized support:
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd safe-space
+git clone https://github.com/Caritajoe18/Talk-Safe-Group-30-plp-hack.git
+cd talk-safe
 ```
 
 ### 2. Frontend Setup
