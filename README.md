@@ -24,7 +24,7 @@ The Safe-space mobile app will provide:
 
 ## Technology Stack
 - **Frontend**: Vite + React + TypeScript
-- **Backend**: Node.js + Express + TypeScript
+- **Backend**: Node.js + Express + Javascript
 - **Database**: MongoDB (Chosen for flexibility with unstructured data like incident reports and geospatial features)
 
 ## Setup Instructions
