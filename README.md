@@ -1,6 +1,6 @@
-# Safe-space
+# Talk Safe
 
-**Safe-space** is a mobile app designed to provide a safe and confidential platform for survivors of gender-based violence to report incidents and receive emergency assistance.
+**Talk Safe** is a mobile app designed to provide a safe and confidential platform for survivors of gender-based violence to report incidents and receive emergency assistance.
 
 ## Problem Statement
 Gender-based violence is widespread, yet many cases go unreported due to:
