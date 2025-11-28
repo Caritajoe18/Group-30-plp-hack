@@ -3,24 +3,49 @@
 **Safe-space** is a mobile app designed to provide a safe and confidential platform for survivors of gender-based violence to report incidents and receive emergency assistance.
 
 ## Problem Statement
-Gender-based violence is a pervasive issue affecting most communities, with many cases going unreported due to fear, stigma, or lack of access to support services. Existing reporting mechanisms often fall short, leaving victims without timely assistance or support.
+Gender-based violence is widespread, yet many cases go unreported due to:
 
-## Background
-Gender-based violence can have severe physical, emotional, and psychological consequences. The app aims to bridge the gap between victims and support services, ensuring timely intervention and support.
+1. Fear of retaliation or stigma  
+2. Lack of accessible reporting systems  
+3. Inadequate or slow response from existing tools  
+4. Limited awareness of available support services  
 
-## Research
-Our research indicates that:
-- Victims often feel isolated and helpless.
-- Existing reporting mechanisms are often inadequate or inaccessible.
-- There is a need for a safe, confidential, and user-friendly platform for reporting incidents.
+This leaves countless victims without timely help.
 
-## Solution
-The Safe-space mobile app will provide:
-1. **Incident Reporting**: Users can report incidents of gender-based violence, including location, description, and evidence.
-2. **Emergency Assistance**: Users can request immediate assistance, triggering alerts to nearby authorities or designated contacts.
-3. **Support Services**: Users can access a directory of local support services, including counseling, legal aid, and medical assistance.
-4. **Safety Features**: Includes anonymous reporting.
-5. **User-Friendly Interface**: Intuitive design ensuring ease of use for victims.
+## Purpose & Background
+GBV has severe emotional, physical and psychological consequences. Safe-space bridges the gap between survivors and support systems by offering a confidential, user-friendly and safe reporting environment.
+Our research shows that:
+1. Victims often feel isolated, unsafe, and unsure where to seek help  
+2. Many existing reporting mechanisms are not survivor-friendly  
+3. Survivors need *anonymous, fast, and accessible* tools  
+4. A mobile-first solution fits the needs of most users  
+Safe-space aims to address these gaps.
+
+## Solution Features
+1. Incident Reporting
+Report GBV incidents with:
+- Location (manual or auto-select)
+- Description of the incident  
+- Optional evidence (images, audio, etc.)  
+- Anonymous reporting option  
+
+2. Emergency Assistance
+Request immediate help through:
+- One-tap emergency alert  
+- Notification to trusted contacts or authorities  
+- Quick Exit button for safety  
+
+3. Support Services Directory
+Access categorized support:
+- Counseling centers  
+- Healthcare facilities  
+- Legal support  
+- Safe shelters  
+
+4. User-Friendly Interface
+- Simple and intuitive navigation  
+- Mobile-first responsive design  
+- Accessible even in low-connectivity environments 
 
 ## Technology Stack
 - **Frontend**: Vite + React + TypeScript
