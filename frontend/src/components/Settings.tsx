@@ -7,9 +7,9 @@ function Settings() {
   const { theme, toggleTheme } = useTheme()
   const [settings, setSettings] = useState({
     emergencyContacts: [
-      { name: 'Emergency Contact 1', number: '' },
-      { name: 'Emergency Contact 2', number: '' },
-      { name: 'Emergency Contact 3', number: '' }
+      { name: 'Emergency Contact 1', number: '1-800-799-7233' },
+      { name: 'Emergency Contact 2', number: '1-800-978-3600' },
+      { name: 'Emergency Contact 3', number: '1-800-533-5387' }
     ],
     quickExitEnabled: true,
     shakeToExit: false,

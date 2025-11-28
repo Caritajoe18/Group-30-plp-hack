@@ -27,6 +27,7 @@ function Home() {
               <span className="action-icon">📝</span>
               <h3>Report Incident</h3>
               <p>Submit a confidential report</p>
+            
             </div>
             <div className="action-card">
               <span className="action-icon">🚨</span>
@@ -37,6 +38,7 @@ function Home() {
               <span className="action-icon">🏥</span>
               <h3>Support Services</h3>
               <p>Find local resources & counseling</p>
+
             </div>
           </div>
         </div>
