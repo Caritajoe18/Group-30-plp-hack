@@ -38,6 +38,20 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
                 Don't have an account? <span onClick={() => setIsSignUp(true)}>Sign Up</span>
               </p>
             </div>
+            <div className="action-card">
+              <span className="action-icon">🚨</span>
+              <h3>Emergency Help</h3>
+              <p>Immediate assistance & contacts</p>
+            </div>
+            <div className="action-card">
+              <span className="action-icon">🏥</span>
+              <h3>Support Services</h3>
+              <p>Find local resources & counseling</p>
+            </div>
+             <div className="action-card">
+              <span className="action-icon">🏥</span>
+              <h3>Evidence Vault</h3>
+              <p>Secure storage for your evidence</p>
           ) : (
             <div className="auth-card">
               <h2>Sign Up</h2>
@@ -97,8 +111,17 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
       )}
 
       <footer className="footer">
-        <p>Talk Safe is a confidential platform. All reports are handled with care and respect. In case of immediate danger, please contact emergency services directly.</p>
-        <p>&copy; 2025 Talk Safe. Built for Group 30 PLP Hackathon.</p>
+        <div className="footer-content">
+          <p>Talk Safe is a confidential platform. All reports are handled with care and respect. In case of immediate danger, please contact emergency services directly.</p>
+          <p>&copy; 2025 Talk Safe. Built for Group 30 PLP Hackathon.</p>
+        </div>
+        <button
+          onClick={handlePanic}
+          className="footer-panic-btn"
+          aria-label="Quick exit - opens calculator"
+        >
+          🚨 SOS
+        </button>
       </footer>
 
       {isLoggedIn && (

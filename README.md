@@ -1,6 +1,6 @@
-# Safe-space
+# Talk Safe
 
-**Safe-space** is a mobile app designed to provide a safe and confidential platform for survivors of gender-based violence to report incidents and receive emergency assistance.
+**Talk Safe** is a mobile app designed to provide a safe and confidential platform for survivors, vistims and witnesses of gender-based violence to report incidents and receive emergency assistance.
 
 ## Problem Statement
 Gender-based violence is widespread, yet many cases go unreported due to:
@@ -13,13 +13,13 @@ Gender-based violence is widespread, yet many cases go unreported due to:
 This leaves countless victims without timely help.
 
 ## Purpose & Background
-GBV has severe emotional, physical and psychological consequences. Safe-space bridges the gap between survivors and support systems by offering a confidential, user-friendly and safe reporting environment.
+GBV has severe emotional, physical and psychological consequences. Talk-safe bridges the gap between survivors and support systems by offering a confidential, user-friendly and safe reporting environment.
 Our research shows that:
 1. Victims often feel isolated, unsafe, and unsure where to seek help  
 2. Many existing reporting mechanisms are not survivor-friendly  
 3. Survivors need *anonymous, fast, and accessible* tools  
 4. A mobile-first solution fits the needs of most users  
-Safe-space aims to address these gaps.
+talk-safe aims to address these gaps.
 
 ## Solution Features
 1. Incident Reporting
@@ -48,6 +48,16 @@ Access categorized support:
 - Accessible even in low-connectivity environments 
 
 ## Technology Stack
+<<<<<<< HEAD
+- **Frontend**: Vite + React + TypeScript
+- **Backend**: Node.js + Express + JavaScript
+- **Database**: MongoDB (Chosen for flexibility with unstructured data like incident reports and geospatial features)
+
+## SOS Feature Implementation
+See [Feature requirements.md](Feature%20requirements.md) for detailed frontend requirements.
+
+## Setup Instructions
+=======
 1. Frontend: Vite + React + TypeScript
 2. Backend: Node.js + Express + TypeScript
 3. Database: MongoDB 
@@ -57,6 +67,7 @@ Access categorized support:
 - Scalability  
 
 ## Getting Started
+>>>>>>> update
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -65,9 +76,15 @@ Access categorized support:
 
 ### 1. Clone the repository
 ```bash
+<<<<<<< HEAD
+git clone https://github.com/Caritajoe18/Talk-Safe-Group-30-plp-hack.git
+cd talk-safe
+```
+=======
 git clone https://github.com/Caritajoe18/Group-30-plp-hack.git
 cd Talk-Safe-Group-30-plp-hack
 
+>>>>>>> update
 
 ### 2. Frontend Setup
 Navigate to the frontend directory, install dependencies, and start the development server.

@@ -10,6 +10,11 @@ interface NavigationProps {
 function Navigation({ isAuthenticated, onLogout }: NavigationProps) {
   const location = useLocation()
 
+  // Hide navigation on calculator page
+  if (location.pathname === '/calculator') {
+    return null
+  }
+
   const navItems = [
     { path: '/', label: 'Home', icon: '🏠' },
     { path: '/report', label: 'Report', icon: '📝' },
