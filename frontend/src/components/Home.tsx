@@ -38,7 +38,11 @@ function Home() {
               <span className="action-icon">🏥</span>
               <h3>Support Services</h3>
               <p>Find local resources & counseling</p>
-
+            </div>
+             <div className="action-card">
+              <span className="action-icon">🏥</span>
+              <h3>Evidence Vault</h3>
+              <p>Secure storage for your evidence</p>
             </div>
           </div>
         </div>
