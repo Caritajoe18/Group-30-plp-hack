@@ -1,7 +1,13 @@
+// Navigation.tsx
 import { Link, useLocation } from 'react-router-dom'
 import './Navigation.css'
 
-function Navigation() {
+interface NavigationProps {
+  isAuthenticated: boolean
+  onLogout?: () => void
+}
+
+function Navigation({ isAuthenticated, onLogout }: NavigationProps) {
   const location = useLocation()
 
   // Hide navigation on calculator page
@@ -32,6 +38,11 @@ function Navigation() {
           </Link>
         ))}
       </div>
+      {isAuthenticated && (
+        <button onClick={onLogout} className="logout-btn">
+          Logout
+        </button>
+      )}
     </nav>
   )
 }
