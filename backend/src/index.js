@@ -15,7 +15,7 @@ app.use(express.json()); // Middleware to parse JSON bodies
 app.use('/api/sos', sosRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Hello from Backend!');
+    res.send('Hello from talk safe');
 });
 
 app.listen(port, () => {
