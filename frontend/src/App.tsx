@@ -8,6 +8,7 @@ import EvidenceVault from "./components/EvidenceVault";
 import Settings from "./components/Settings";
 import FakeCalculator from "./components/FakeCalculator";
 
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -54,6 +55,9 @@ function App() {
         path="/calculator"
         element={isLoggedIn ? <FakeCalculator /> : <Navigate to="/" />}
       />
+      {/* Panic/SOS route - accessible anytime */}
+  <Route path="/calculator" element={<FakeCalculator />} />
+
     </Routes>
   );
 }
