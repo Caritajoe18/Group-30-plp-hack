@@ -38,7 +38,6 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
                 Don't have an account? <span onClick={() => setIsSignUp(true)}>Sign Up</span>
               </p>
             </div>
-<<<<<<< HEAD
             <div className="action-card">
               <span className="action-icon">🚨</span>
               <h3>Emergency Help</h3>
@@ -53,7 +52,6 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
               <span className="action-icon">🏥</span>
               <h3>Evidence Vault</h3>
               <p>Secure storage for your evidence</p>
-=======
           ) : (
             <div className="auth-card">
               <h2>Sign Up</h2>
@@ -64,7 +62,6 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
               <p className="switch-auth">
                 Already have an account? <span onClick={() => setIsSignUp(false)}>Sign In</span>
               </p>
->>>>>>> update
             </div>
           )}
         </div>
