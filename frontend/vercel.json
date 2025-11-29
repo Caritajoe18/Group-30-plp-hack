@@ -17,11 +17,6 @@
     "VITE_EVIDENCE_VAULT_PIN": "1234",
     "VITE_SESSION_TIMEOUT": "3600000"
   },
-  "functions": {
-    "src/pages/api/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
