@@ -54,6 +54,9 @@ function App() {
         path="/calculator"
         element={isLoggedIn ? <FakeCalculator /> : <Navigate to="/" />}
       />
+      {/* Panic/SOS route - accessible anytime */}
+  <Route path="/calculator" element={<FakeCalculator />} />
+  
     </Routes>
   );
 }

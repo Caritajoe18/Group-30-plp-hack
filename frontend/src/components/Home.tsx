@@ -1,25 +1,25 @@
-import './Home.css'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import './Home.css';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface HomeProps {
-  isLoggedIn: boolean
-  onLogin: (username: string, password: string) => boolean
+  isLoggedIn: boolean;
+  onLogin: (username: string, password: string) => boolean;
 }
 
 function Home({ isLoggedIn, onLogin }: HomeProps) {
-  const [isSignUp, setIsSignUp] = useState(false)
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const navigate = useNavigate()
+  const [isSignUp, setIsSignUp] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = () => {
-    onLogin(username, password)
-  }
+    const username = (document.getElementById('username') as HTMLInputElement).value;
+    const password = (document.getElementById('password') as HTMLInputElement).value;
+    onLogin(username, password);
+  };
 
   const handlePanic = () => {
-    navigate('/calculator')
-  }
+    navigate('/calculator'); // SOS page
+  };
 
   return (
     <div className="home">
@@ -29,40 +29,21 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
             <div className="auth-card">
               <h2>Sign In</h2>
               <p>Enter your credentials to access Talk Safe</p>
-
-              <input
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
+              <input id="username" type="text" placeholder="Username" />
+              <input id="password" type="password" placeholder="Password" />
               <button onClick={handleLogin}>Login</button>
-
               <p className="switch-auth">
-                Don't have an account?{' '}
-                <span onClick={() => setIsSignUp(true)}>Sign Up</span>
+                Don't have an account? <span onClick={() => setIsSignUp(true)}>Sign Up</span>
               </p>
             </div>
           ) : (
             <div className="auth-card">
               <h2>Sign Up</h2>
               <p>Registration is disabled. Use default credentials:</p>
-              <p>
-                <b>Username:</b> admin
-              </p>
-              <p>
-                <b>Password:</b> admin123
-              </p>
-
+              <p><b>Username:</b> admin</p>
+              <p><b>Password:</b> admin123</p>
               <p className="switch-auth">
-                Already have an account?{' '}
-                <span onClick={() => setIsSignUp(false)}>Sign In</span>
+                Already have an account? <span onClick={() => setIsSignUp(false)}>Sign In</span>
               </p>
             </div>
           )}
@@ -76,22 +57,17 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
 
           <div className="welcome">
             <h2>Welcome to Talk Safe</h2>
-            <p>
-              You are not alone. This platform provides a safe, confidential
-              space to report incidents of gender-based violence and access
-              immediate support services.
-            </p>
+            <p>A safe, confidential space to report incidents and access support services.</p>
 
+            {/* SOS Emergency */}
             <div className="sos-section">
-              <button
-                className="sos-button"
-                onClick={() => window.location.href = 'tel:911'}
-              >
+              <button className="sos-button" onClick={handlePanic}>
                 🚨 SOS Emergency
               </button>
               <p className="sos-note">Hold for 3 seconds to activate emergency call</p>
             </div>
 
+            {/* Quick action cards */}
             <div className="quick-actions">
               <div className="action-card" onClick={() => navigate('/report')}>
                 <span className="action-icon">📝</span>
@@ -120,28 +96,28 @@ function Home({ isLoggedIn, onLogin }: HomeProps) {
 
       <footer className="footer">
         <div className="footer-content">
-          <p>
-            Talk Safe is a confidential platform. All reports are handled with care and respect. 
-            In case of immediate danger, please contact emergency services directly.
-          </p>
+          <p>All reports are handled confidentially. In immediate danger, contact emergency services directly.</p>
           <p>&copy; 2025 Talk Safe. Built for Group 30 PLP Hackathon.</p>
         </div>
+
+        {/* Footer panic button */}
         <button
           onClick={handlePanic}
           className="footer-panic-btn"
-          aria-label="Quick exit - opens calculator"
+          aria-label="Quick exit - opens SOS page"
         >
           🚨 SOS
         </button>
       </footer>
 
+      {/* Floating panic button */}
       {isLoggedIn && (
         <button className="panic-btn" onClick={handlePanic} aria-label="Quick Exit">
           ⚠️
         </button>
       )}
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
