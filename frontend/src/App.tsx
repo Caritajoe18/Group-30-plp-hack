@@ -8,11 +8,25 @@ import Settings from './components/Settings'
 import FakeCalculator from './components/FakeCalculator'
 import Navigation from './components/Navigation'
 
+// Add these 👇
+import SignIn from './pages/signin.tsx'
+import SignUp from './pages/signup.tsx'
+// import SignIn from './pages/signin.jsx'
+// import SignUp from './pages/signup.jsx'
+// or if using TypeScript
+//
+
+// import SignIn from './src/pages/signin.jsx'
+// import SignUp from './pages/signup'
+
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+
         <Route path="/report" element={<ReportIncident />} />
         <Route path="/emergency" element={<EmergencyAssistance />} />
         <Route path="/support" element={<SupportServices />} />

@@ -9,6 +9,9 @@ function Home() {
       <header className="header">
         <h1>Talk Safe</h1>
         <p>Your safe and confidential platform for support</p>
+        <a href="/signin">Sign In</a>
+<a href="/signup" style={{ marginLeft: "10px" }}>Sign Up</a>
+
       </header>
       <main className="main">
         <div className="welcome">
@@ -38,7 +41,11 @@ function Home() {
               <span className="action-icon">🏥</span>
               <h3>Support Services</h3>
               <p>Find local resources & counseling</p>
-
+            </div>
+            <div className="action-card">
+              <span className="action-icon">🗄️</span>
+              <h3>Evidence Vault</h3>
+              <p>Secure storage for your evidence</p>
             </div>
           </div>
         </div>
