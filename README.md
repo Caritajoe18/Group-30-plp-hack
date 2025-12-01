@@ -60,7 +60,12 @@ Access categorized support services:
 * Legal assistance
 * Safe shelters
 
-### **4. User-Friendly Interface**
+### **4. Registration and Sign up**
+
+* User optionally registration and sign up to interact with the support groups provided
+
+
+### **5. User-Friendly Interface**
 
 * Simple, intuitive navigation
 * Optimized for mobile use
@@ -160,7 +165,3 @@ Ensure your MongoDB instance is running.
 ## **Acknowledgement**
 
 We appreciate the **PLP team** for their guidance and support throughout the development of this project.
-
----
-
-If you want, I can format this with badges, screenshots, or a table of contents to make it even more professional.
