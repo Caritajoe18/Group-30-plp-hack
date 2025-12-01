@@ -110,7 +110,7 @@ cd talk-safe
 ### **2. Frontend Setup**
 
 ```bash
-cd frontend
+cd frontend-updated
 npm install
 npm run dev
 ```
